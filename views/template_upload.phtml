@@ -1,0 +1,13 @@
+<h1> Upload </h1>
+
+<?php if (!empty($error)) {
+    echo $error;
+} ?>
+
+<!--Le enctype multipart/form-data permet d'envoyer du texte mais également des fichiers-->
+<form method="POST" enctype="multipart/form-data">
+    <!-- multiple permet d'envoyer plusieurs fichiers-->
+    <input type="file" name="image_file" accept="image/*">
+    <input type="submit" name="upload" value="upload">
+
+</form>
